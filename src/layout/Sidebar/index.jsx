@@ -39,7 +39,14 @@ const Sidebar = () => {
         query: { tabName: 'UsdtPool' },
       });
     }
+
+    if (pathName === '/xmtp-invites') {
+      router.push({
+        query: { tabName: 'XMTPInvites' },
+      });
+    }
   };
+
   return (
     <>
       <nav className="navbar-main">
@@ -62,14 +69,39 @@ const Sidebar = () => {
             />
             <p className="navbar-text">Push Protocol</p>
           </div> */}
-          <div onClick={() => handleRedirect('/usdt-pool')} className="navbar-a">
-            <p className="navbar-text">1Inch USDT Pool</p>
+          <div
+            onClick={() => handleRedirect('/usdt-pool')}
+            className="navbar-a"
+          >
+            <p className="navbar-text">
+              <img
+                src="https://storage.googleapis.com/ethglobal-api-production/organizations%2Fif0ri%2Flogo%2F1675803570272_mhT50NcT_400x400.jpeg"
+                alt="1inch"
+                width={30}
+                height={30}
+                style={{ borderRadius: '50%' }}
+                loading="lazy"
+              />{' '}
+              USDC Pool
+            </p>
           </div>
-          <div onClick={() => handleRedirect('/free-trial')} className="navbar-a">
+          <div
+            onClick={() => handleRedirect('/free-trial')}
+            className="navbar-a"
+          >
             <p className="navbar-text">Get Free Trial</p>
           </div>
-          <div onClick={() => handleRedirect('/buy-calls')} className="navbar-a">
+          <div
+            onClick={() => handleRedirect('/buy-calls')}
+            className="navbar-a"
+          >
             <p className="navbar-text">Buy Calls</p>
+          </div>
+          <div
+            onClick={() => handleRedirect('/xmtp-invites')}
+            className="navbar-a"
+          >
+            <p className="navbar-text">XMTP Invites</p>
           </div>
         </div>
       </nav>

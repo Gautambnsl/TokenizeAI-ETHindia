@@ -275,6 +275,27 @@ code {
   fill: #007ACC;
 }
 
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #007ACC;
+  outline: 3px #007ACC solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  color: white;
+}
+
+.subscribe-button:hover {
+  background-color: transparent;
+  color: black;
+}
+
 .responsive-card {
   border: 5px solid #fff;
   box-shadow: 0px 0px 4px 0px #318ac2;

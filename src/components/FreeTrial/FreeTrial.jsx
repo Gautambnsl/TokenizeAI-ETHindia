@@ -7,9 +7,11 @@ const FreeTrial = () => {
     <>
       <Container className="mt-3">
         <Row className="justify-content-center mt-3">
-          <Col md="6" className="mt-3">
+          <Col md="8" className="mt-3">
             <Card className="free-trial-card">
-              <h5>You should be the citizen of India</h5>
+              <h5>
+                You should be the citizen of India to claim 10 prompts calls
+              </h5>
               <CardBody className="p-5">
                 <LoginButton />
               </CardBody>

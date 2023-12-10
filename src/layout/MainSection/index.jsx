@@ -6,6 +6,7 @@ import Main from '../Main';
 import FreeTrial from '../../components/FreeTrial/freeTrial';
 import BuyCalls from '../../components/BuyCalls/BuyCalls';
 import UsdtPool from '../../components/UsdtPool/UsdtPool';
+import XMTPInvites from '../../components/XMTPInvites/XMTPInvites';
 
 const MainSection = () => {
   const router = useRouter();
@@ -22,6 +23,8 @@ const MainSection = () => {
       return <BuyCalls />;
     } else if (tabName === 'UsdtPool') {
       return <UsdtPool />;
+    } else if (tabName === 'XMTPInvites') {
+      return <XMTPInvites />;
     } else {
       return <Main />;
     }
